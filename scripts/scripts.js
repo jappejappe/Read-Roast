@@ -2,15 +2,15 @@ const cartas = document.querySelectorAll('.carta');
 const seta = document.getElementById('seta');
 const ver_mais = document.getElementById('ver_mais');
 const backgrounds = [
-    'url("/media/cardapio/bolo_de_chocolate.jpg")',
-    'url("/media/cardapio/cafe_caramelizado.jpg")',
-    'url("/media/cardapio/chocolate_quente.jpg")',
-    'url("/media/cardapio/cafe_com_baunilha.jpg")',
-    'url("/media/cardapio/coxinha.jpg")',
-    'url("/media/cardapio/cupcake.jpg")',
-    'url("/media/cardapio/mini_croissant.jpg")',
-    'url("/media/cardapio/panquecas.jpg")',
-    'url("/media/cardapio/pao_de_queijo.jpg")'
+    'url("./media/cardapio/bolo_de_chocolate.jpg")',
+    'url("./media/cardapio/cafe_caramelizado.jpg")',
+    'url("./media/cardapio/chocolate_quente.jpg")',
+    'url("./media/cardapio/cafe_com_baunilha.jpg")',
+    'url("./media/cardapio/coxinha.jpg")',
+    'url("./media/cardapio/cupcake.jpg")',
+    'url("./media/cardapio/mini_croissant.jpg")',
+    'url("./media/cardapio/panquecas.jpg")',
+    'url("./media/cardapio/pao_de_queijo.jpg")'
 ];
 
 const textos = [

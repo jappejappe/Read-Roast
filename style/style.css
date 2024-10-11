@@ -152,7 +152,7 @@ footer pre {
     width: 100%;
     height: auto;
     background-size: cover;
-    background-image: url(/media/banner.png);
+    background-image: url(../media/banner.png);
 }
 
 .text {
@@ -251,27 +251,27 @@ footer pre {
 }
 
 #nova_1 {
-    background-image: url(/media/cardapio/cafe_caramelizado.jpg);
+    background-image: url(../media/cardapio/cafe_caramelizado.jpg);
 }
 
 #nova_2 {
-    background-image: url(/media/cardapio/chocolate_quente.jpg); 
+    background-image: url(../media/cardapio/chocolate_quente.jpg); 
 }
 
 #nova_3 {
-    background-image: url(/media/cardapio/cafe_com_baunilha.jpg);
+    background-image: url(../media/cardapio/cafe_com_baunilha.jpg);
 }
 
 #nova_4 {
-    background-image: url(/media/cardapio/mini_croissant.jpg);
+    background-image: url(../media/cardapio/mini_croissant.jpg);
 }
 
 #nova_5 {
-    background-image: url(/media/cardapio/panquecas.jpg);
+    background-image: url(../media/cardapio/panquecas.jpg);
 }
 
 #nova_6 {
-    background-image: url(/media/cardapio/bolo_de_chocolate.jpg);
+    background-image: url(../media/cardapio/bolo_de_chocolate.jpg);
 }
 
 
@@ -403,7 +403,7 @@ footer pre {
 }
 
 #item_1 {
-    background-image: url(/media/cardapio/cupcake.jpg);
+    background-image: url(../media/cardapio/cupcake.jpg);
     background-size: cover;
     width: 100%;
     min-width: 897px;
@@ -496,25 +496,25 @@ footer pre {
 }
 
 #decoracao {
-    background-image: url(/media/ambiente/decoration.jpg);
+    background-image: url(../media/ambiente/decoration.jpg);
     background-size: cover;
     background-position: 45%;
 }
 
 #iluminacao {
-    background-image: url(/media/ambiente/luz.jpg);
+    background-image: url(../media/ambiente/luz.jpg);
     background-size: cover;
     background-position: 70%;
 }
 
 #organizacao {
-    background-image: url(/media/ambiente/organization.jpg);
+    background-image: url(../media/ambiente/organization.jpg);
     background-size: cover;
     background-position: 60%;
 }
 
 #aroma {
-    background-image: url(/media/ambiente/aroma.jpg);
+    background-image: url(../media/ambiente/aroma.jpg);
     background-size: cover;
     background-position: 60%;
 }
