@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <title>Read & Roast</title>
+</head>
+
+
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div id="div_header">
+            <!-- Logo -->
+            <div class="logo">
+                <div>
+                    <img id="logo_image" src="media/icon/coffee-beans_creme.png" alt="LOGO: dois grãos de café">
+                </div>
+                <div id="RNR">
+                    <h1 id="logo_text_r">R</h1>
+                    <h1 id="logo_text_n">&</h1>
+                    <h1 id="logo_text_r">R</h1>
+                </div>
+            </div>
+
+            <!-- Nav -->
+            <div class="div_center">
+                <nav>
+                    <button class="button_nav" onclick="scrollToSection('gen')">Catálogo</button>
+                    <button class="button_nav" onclick="scrollToSection('cardapio')">Cardápio</button>
+                    <button class="button_nav" onclick="scrollToSection('ambiente')">Ambiente</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section>
+        <div id="banner">
+            <div class="text">
+                <h1>Read <span>&</span> Roast</h1>
+                <pre>Saboreie histórias, degustando
+cada página com café.</pre>
+                <button id="ver_mais">Ver mais</button>
+            </div>
+            <div id="descer">
+                <button>
+                    <img id="seta" src="/media/icon/seta.png">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Novidades -->
+    <section>
+        <p class="subtitulo">Novidades</p>
+        <div id="sec_2">
+            <div id="nova_1">
+                <p>Café caramelizado</p>
+            </div>
+            <div id="nova_2">
+                <p>Chocolate quente</p>
+            </div>
+            <div id="nova_3">
+                <p>Café com baunilha</p>
+            </div>
+            <div id="nova_4">
+                <p>Mini croissant</p>
+            </div>
+            <div id="nova_5">
+                <p>Panquecas</p>
+            </div>
+            <div id="nova_6">
+                <p>Bolo de chocolate</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gêneros -->
+    <section id="gen">
+        <p class="subtitulo">Gêneros</p>
+        <div id="sec_3">
+            <div class="carta" id="gen_1">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Fantasia</span></p>
+                        <img src="/media/genres/fantasia.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Mundos imaginários e mágicos, cheios de criaturas e aventuras épicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" id="gen_2">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Biografia</span></p>
+                        <img src="/media/genres/biografia.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Relatos reais da vida de figuras importantes, inspirando e informando.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" id="gen_3">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Infantil</span></p>
+                        <img src="/media/genres/infantil.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Histórias cativantes e educativas para crianças, cheias de lições e imaginação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" id="gen_4">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Ficção</span></p>
+                        <img src="/media/genres/ficcao.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Narrativas inventadas sobre pessoas e eventos, variando de dramas a aventuras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" id="gen_5">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Romance</span></p>
+                        <img src="/media/genres/romance.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Focado em histórias de amor e relacionamentos emocionantes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" id="gen_6">
+                <div class="carta_inner">
+                    <div class="carta_front">
+                        <p><span class="gen_claro">Terror</span></p>
+                        <img src="/media/genres/terror.png">
+                    </div>
+                    <div class="carta_back">
+                        <p>Histórias que exploram o medo, com monstros e suspense sobrenatural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio">
+        <p class="subtitulo">Cardápio: Mais vendidos</p>
+        <div id="big_sec_4">
+            <div id="sec_4">
+                <div id="item_1">
+                    <p id="nome_maior">Cupcake</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambiente -->
+    <section id="ambiente">
+        <p class="ambiente_escrita">Ambiente</p>
+        <div id="sec_5">
+            <div id="decoracao">
+                <div class="degrade">
+                    <p>Decoração</p>
+                </div>
+            </div>
+            <div id="iluminacao">
+                <div class="degrade">
+                    <p>Iluminação</p>
+                </div>
+            </div>
+            <div id="organizacao">
+                <div class="degrade">
+                    <p>Organização</p>
+                </div>
+            </div>
+            <div id="aroma">
+                <div class="degrade">
+                    <p>Aroma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights -->
+    <section id="sec_6">
+        <div id="cafe">
+            <div class="entrar_esquerda">
+                <div id="insight_1">
+                    <div class="textos_insights_1">
+                        <h1>Café</h1>
+                        <p>Para acompanhar um bom livro, não há nada melhor que um bom café. 
+                        Na Read & Roast, cada xícara é cuidadosamente preparada para realçar seu momento de leitura, 
+                        proporcionando uma pausa saborosa e acolhedora!</p>
+                    </div>
+                </div>
+                <div id="quadrado_1">
+                    <img src="/media/insights/cafe.png">
+                </div>
+            </div>
+        </div>
+        
+        <p id="linha"></p>
+        
+        <div class="entrar_direita">
+            <div id="quadrado_2">
+                <img src="/media/insights/livro.png">
+            </div>
+            <div id="insight_2">
+                <div class="textos_insights_2">
+                    <h1>Livro</h1>
+                    <p>A leitura não é apenas uma forma de conhecimento, mas uma jornada de imersão. 
+                    Explore nossas prateleiras e descubra obras que vão do clássico ao contemporâneo, 
+                    enquanto saboreia cada página.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div>
+            <div class="logo">
+                <div>
+                    <img id="logo_image" src="media/icon/coffee-beans_creme.png" alt="LOGO: dois grãos de café">
+                </div>
+                <div id="RNR">
+                    <h1 id="logo_text_r">R</h1>
+                    <h1 id="logo_text_n">&</h1>
+                    <h1 id="logo_text_r">R</h1>
+                </div>
+            </div>
+            <pre>© 2024 Read & Roast, Gabriel Jappe.
+Todos os direitos reservados.</pre>
+            <div id="ifc">
+                <img src="/media/ifc_logo.png">
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>

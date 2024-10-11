@@ -1,0 +1,635 @@
+/* DEFINIÇÕES BASE ################### */
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@keyframes pular {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+:root {
+    --necroterio: #B6ACA1;
+    --kiwi: #8B7A64;
+    --creme: #E1C8A9;
+    --capuccino: #614D35;
+    --coffe: #362715;
+    --choco: #3D280D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: var(--coffe);
+}
+
+nav button:not(:last-child)::after{
+    content: "|";
+    margin: 0px 20px 0px 20px;
+    font-family: "Port Lligat Slab", serif;
+}
+
+nav button:hover {
+    color: var(--kiwi);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--creme);
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: var(--coffe);
+}
+
+footer > div {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer pre {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Lora", serif;
+}
+
+#ifc {
+    justify-content: center;
+    margin: auto;
+}
+
+/* CABEÇALHO ######################### */
+#div_header {
+    display: flex;
+    background-color: var(--coffe);
+    width: 100%;
+    max-width: 1400px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO ############################ */
+
+.logo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+}
+
+#logo_image {
+    width: 120px;
+    height: 120px;
+}
+
+#RNR {
+    width: auto;
+    display: flex;
+    margin-left: 20px;
+    font-family: "Lora", serif;
+}
+
+#logo_text_r {
+    color: var(--kiwi);
+    font-size: 96px;
+}
+
+#logo_text_n {
+    color: var(--creme);
+    font-size: 96px;
+}
+
+/* NAV ################################### */
+
+.button_nav {
+    border: 0px;
+    background-color: rgba(0, 0, 255, 0);
+    color: var(--creme);
+    font-size: 40px;
+    font-family: "Port Lligat Slab", system-ui;
+}
+
+/* BANNER ####################################### */
+
+#banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url(/media/banner.png);
+}
+
+.text {
+    color: var(--coffe);
+    font-family: serif;
+    width: 1400px;
+    margin: 103px 260px 0px;
+}
+
+.text h1 {
+    font-size: 96px;
+    font-family: "Lora", serif;
+    color: var(--choco);
+}
+
+.text h1 span{
+    color: var(--capuccino);
+}
+
+.text pre {
+    font-size: 60px; 
+    font-family: "Port Lligat Slab", system-ui;
+    margin: 72px 0 72px;
+}
+
+#ver_mais {
+    width: 374px;
+    height: 161px;
+    padding: 10px 20px;
+    background-color: var(--kiwi);
+    color: var(--coffe);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: "Port Lligat Slab", system-ui;
+    transition: 0.3s ease;
+}
+
+#ver_mais:hover {
+    transform: scale(1.03);
+}
+
+#descer {
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+#descer button {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+#seta {
+    animation: pular 1.5s infinite ease-in-out;
+    transform: rotate(90deg);
+}
+ 
+
+/* NOVIDADES ###################### */
+
+.subtitulo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    font-family: "Port Lligat Slab", system-ui;
+    margin-bottom: 20px;
+}
+
+#sec_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1400px;
+    gap: 70px;
+}
+
+#sec_2 div {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 372px;
+    height: 283px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#sec_2 div p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
+    font-family: "Port Lligat Slab", system-ui;
+    border-radius: 10px;
+}
+
+#nova_1 {
+    background-image: url(/media/cardapio/cafe_caramelizado.jpg);
+}
+
+#nova_2 {
+    background-image: url(/media/cardapio/chocolate_quente.jpg); 
+}
+
+#nova_3 {
+    background-image: url(/media/cardapio/cafe_com_baunilha.jpg);
+}
+
+#nova_4 {
+    background-image: url(/media/cardapio/mini_croissant.jpg);
+}
+
+#nova_5 {
+    background-image: url(/media/cardapio/panquecas.jpg);
+}
+
+#nova_6 {
+    background-image: url(/media/cardapio/bolo_de_chocolate.jpg);
+}
+
+
+/* GÊNEROS ###################### */
+#sec_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 260px;
+    margin-right: 260px;
+    gap: 70px;
+    perspective: 1000px;
+}
+
+#sec_3 > div:hover {
+    transform: translateY(20px) scale(1.05);
+    cursor: pointer;
+}
+
+.carta {
+    width: 372px;
+    height: 283px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.carta_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
+}
+
+.carta_front, .carta_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.carta_front {
+    background-color: var(--kiwi);
+    z-index: 2;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.carta_back {
+    background-color: var(--choco);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--creme); /* Cor do texto para o verso */
+}
+
+.carta_inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.carta_front p {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Port Lligat Slab", system-ui;
+}
+
+.carta_front img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 150px;
+    margin-top: 10px;
+}
+
+.carta_back p {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Port Lligat Slab", system-ui;
+}
+
+
+
+.carta {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.gen_claro {
+    color: var(--choco);
+}
+
+.gen_escuro {
+    color: var(--kiwi);
+}
+
+/* CARDÁPIO ################## */
+
+#big_sec_4 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec_4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#sec_4 div {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#item_1 {
+    background-image: url(/media/cardapio/cupcake.jpg);
+    background-size: cover;
+    width: 100%;
+    min-width: 897px;
+    height: 100%;
+    min-height: 683px;
+    justify-content: space-between;
+}
+
+#item_1 pre {
+    font-size: 130px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+    text-shadow: 
+    2px 2px 0px black,
+    -2px -2px 0px black,
+    -2px 2px 0px black,
+    2px -2px 0px black;
+    margin-left: 30px;
+}
+
+#item_1 p {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
+    font-family: "Port Lligat Slab", system-ui;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#nome_maior {
+    font-size: 90px;
+}
+
+/* AMBIENTE ######################## */
+
+#ambiente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ambiente_escrita {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: "Port Lligat Slab", system-ui;
+}
+
+#sec_5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    max-width: 1400px;
+    gap: 18px;
+}
+
+#sec_5  div {
+    display: flex;
+    width: 333px;
+    height: 546px;
+    border-radius: 100px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    align-items: end;
+}
+
+#sec_5 > div:hover {
+    transform: scale(1.05);
+}
+
+#sec_5 div p {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    font-family: "Port Lligat Slab", system-ui;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.degrade{
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.01));
+    max-height: 250px;
+}
+
+#decoracao {
+    background-image: url(/media/ambiente/decoration.jpg);
+    background-size: cover;
+    background-position: 45%;
+}
+
+#iluminacao {
+    background-image: url(/media/ambiente/luz.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+
+#organizacao {
+    background-image: url(/media/ambiente/organization.jpg);
+    background-size: cover;
+    background-position: 60%;
+}
+
+#aroma {
+    background-image: url(/media/ambiente/aroma.jpg);
+    background-size: cover;
+    background-position: 60%;
+}
+
+/* INSIGTHS ###################### */
+
+#sec_6 {
+    margin: 0px 0px 200px 0px;
+}
+
+#sec_6 div {
+    display: flex;
+}
+
+#sec_6 img {
+    height: 150px;
+    width: 150px;
+    transform: rotate(-45deg);
+}
+
+.entrar_esquerda {
+    transform: translateX(-85%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.entrar_direita {
+    transform: translateX(77%);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+.ativo {
+    transform: translateX(0);
+  }
+
+#insight_1 {
+    display: flex;
+    flex-direction: column;
+    width: 1493px;
+    height: 329px;
+    background-color: var(--choco);
+}
+
+#quadrado_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 233px;
+    width: 233px;
+    background-color: var(--kiwi);
+    transform: translateX(-50%) translateY(20.5%) rotate(45deg) ;
+}
+
+#linha {
+    height: 20px;
+    width: 100%;
+    background-color: var(--capuccino);
+}
+
+#insight_2 {
+    margin-left: auto;
+    width: 1493px;
+    height: 329px;
+    background-color: var(--choco);
+}
+
+#quadrado_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 233px;
+    width: 233px;
+    background-color: var(--kiwi);
+    transform: translateX(125.75%) translateY(20.6%) rotate(45deg);
+}
+
+.textos_insights_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin: auto 190px auto 260px;
+    max-width: 1300px;
+    gap: 30px;
+}
+
+.textos_insights_1 h1 {
+    font-size: 60px;
+    font-family: "Port Lligat Slab", system-ui;
+    color: var(--creme);
+}
+
+.textos_insights_1 p {
+    font-size: 35px;
+    font-family: "Port Lligat Slab", system-ui;
+    color: var(--creme);
+}
+
+.textos_insights_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: auto 190px auto 260px;
+    max-width: 1300px;
+    gap: 30px;
+}
+
+.textos_insights_2 h1 {
+    font-size: 60px;
+    font-family: "Port Lligat Slab", system-ui;
+    color: var(--creme);
+}
+
+.textos_insights_2 p {
+    font-size: 35px;
+    font-family: "Port Lligat Slab", system-ui;
+    color: var(--creme);
+}
